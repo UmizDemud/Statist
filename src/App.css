@@ -8,7 +8,7 @@
 
 :root {
     --c-1: #111;
-    --c-bg-nav: #eef;
+    --c-bg-nav: #fefefe;
 
     color: var(--c-1);
     font-size: 19px;
@@ -27,6 +27,7 @@
     flex-direction: column;
     padding: 16px;
     background-color: var(--c-bg-nav);
+    border-right: 1px solid var(--c-1);
 }
 
 .search {
