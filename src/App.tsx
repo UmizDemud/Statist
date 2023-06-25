@@ -4,14 +4,12 @@ import { matches } from './assets/data/match.ts';
 import { teams } from './assets/data/team.ts';
 import { Dropdown } from './components/Dropdown/Dropdown.tsx';
 import { Keys } from './assets/data/keys.ts';
-import { Match, Team } from './assets/data/types.ts';
+import { Match } from './assets/data/types.ts';
 import MatchRow from './components/MatchRow/MatchRow.tsx';
 
 function App() {
   const [team1, setTeam1] = useState('');
   const [team2, setTeam2] = useState('');
-  const [team1Obj, setTeam1Obj] = useState<Team | null>(null);
-  const [team2Obj, setTeam2Obj] = useState<Team | null>(null);
 
   const [selectedMatches, setMatches] = useState<Match[]>([]);
 
@@ -20,16 +18,6 @@ function App() {
   }, [selectedMatches]);
 
   const search = () => {
-    for (const team of teams) {
-      if (team[Keys.Team.name] === team1) {
-        setTeam1Obj(team);
-      }
-
-      if (team[Keys.Team.name] === team2) {
-        setTeam2Obj(team);
-      }
-    }
-    
     setMatches(() => {
       if (team1 !== '' && team2 !== '') {
         return matches.filter(match => {

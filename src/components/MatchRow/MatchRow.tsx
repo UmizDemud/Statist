@@ -1,9 +1,7 @@
-import React from 'react'
 import { Match } from '../../assets/data/types'
 import { Keys } from '../../assets/data/keys'
 import moment from 'moment';
 import './index.css'
-import Moment from 'react-moment';
 
 type MatchRowProps = {
     match: Match
