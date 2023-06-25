@@ -6,7 +6,7 @@ import { Dropdown } from './components/Dropdown/Dropdown.tsx';
 import { Keys } from '../public/data/keys.ts';
 import { Match } from '../public/data/types.ts';
 import MatchRow from './components/MatchRow/MatchRow.tsx';
-
+  
 function App() {
   const [team1, setTeam1] = useState('');
   const [team2, setTeam2] = useState('');
