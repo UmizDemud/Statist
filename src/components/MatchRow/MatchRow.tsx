@@ -1,5 +1,5 @@
-import { Match } from '../../assets/data/types'
-import { Keys } from '../../assets/data/keys'
+import { Match } from '../../../public/data/types'
+import { Keys } from '../../../public/data/keys'
 import moment from 'moment';
 import './index.css'
 

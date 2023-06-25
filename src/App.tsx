@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react'
 import './App.css'
-import { matches } from './assets/data/match.ts';
-import { teams } from './assets/data/team.ts';
+import { matches } from '../public/data/match.ts';
+import { teams } from '../public/data/team.ts';
 import { Dropdown } from './components/Dropdown/Dropdown.tsx';
-import { Keys } from './assets/data/keys.ts';
-import { Match } from './assets/data/types.ts';
+import { Keys } from '../public/data/keys.ts';
+import { Match } from '../public/data/types.ts';
 import MatchRow from './components/MatchRow/MatchRow.tsx';
 
 function App() {
