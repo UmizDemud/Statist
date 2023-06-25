@@ -1,0 +1,37 @@
+.dropdown-wrapper {
+    position: relative;
+    height: 100%;
+}
+  
+.dropdown-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 14rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 0;
+}
+  
+.dropdown-item {
+    max-width: 14rem;
+    background-color: #fff;
+    border: none;
+}
+  
+.dropdown-item + .dropdown-item {
+    border-top: 1px solid #222;
+}
+  
+.selected {
+    background-color: #ccd;
+}
+  
+.input {
+    width: 14rem;
+}
+
+.no-items {
+    display: none;
+}
